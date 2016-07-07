@@ -1,0 +1,34 @@
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = ThinkPwn 
+  FILE_GUID                      = 4ea88c52-7591-4dfd-0055-747010f3ce51
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = ShellCEntryLib
+  VALID_ARCHITECTURES            = X64
+
+[Sources]
+  ThinkPwn.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+  IntelFrameworkPkg/IntelFrameworkPkg.dec  
+  IntelFrameworkModulePkg/IntelFrameworkModulePkg.dec  
+
+
+
+[LibraryClasses]
+  ShellCEntryLib   
+  ShellLib
+  BaseLib
+  BaseMemoryLib
+  UefiLib
+  IoLib
+  
+[Protocols]
+  
+[BuildOptions]
+
+[Pcd]
+
